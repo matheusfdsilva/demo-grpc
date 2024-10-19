@@ -7,4 +7,5 @@ import (
 
 type OrderService interface {
 	CreateOrder(context.Context, *pb.Order) error
+	GetOrders(context.Context) []*pb.Order
 }
